@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Notification Settings</title>
+</head>
+<body>
+  <main class="container">
+
+    <section class="content-container">
+      <div class="image">
+        <img class="close-icon" src="images/close-icon.svg" alt="close icon">
+      </div>
+
+      <header class="notification-settings">
+        <h1>Notification settings</h1>
+      </header>
+  
+      <input class="not-subscribed" type="radio" name="subscription-status" value="not-subscribed" id="not-subscribed">
+      <label class="not-subscribed" for="not-subscribed">Not subscribed</label>
+      <p class="not-subscribed-text">Only receive notifications from this request when you have participated or have been @mentioned.</p>
+      <br>
+  
+      <input class="subscribed" type="radio" name="subscription-status" value="subscribed" id="subscribed">
+      <label class="subscribed" for="subscribed">Subcribed</label>
+      <p class="subscribed-text">Receive all notifications from this request.</p>
+      <br>
+  
+      <input class="custom" type="radio" name="subscription-status" value="custom" id="custom">
+      <label class="custom" for="custom">Custom</label>
+      <p class="custom-text">You will be notified for the events selected from the list below. If you participate or are @mentioned you will be subscribed.</p>
+      <br>
+    </section>
+
+    <section class="btn-container">
+      <button class="btn-cancel">Cancel</button>
+      <button class="btn-save">Save</button>
+    </section>
+  </main>
+</body>
+</html>
