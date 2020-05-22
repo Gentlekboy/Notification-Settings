@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(225, 40%, 98%);
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 0.7px;
+}
+main.container{
+  background-color: white;
+  width: 90%;
+  max-height: 100vh;
+  margin: 4vh auto;
+  box-shadow: 3px 3px 5px hsl(230, 8%, 85%), -5px -5px 5px hsl(0, 0%, 97%);
+}
+main.container:hover{
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px hsl(240, 2%, 82%), -5px -5px 5px hsl(240, 5%, 88%, 0.5);
+}
+section.content-container{
+  padding: 10px;
+}
+section.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid hsl(240, 2%, 82%);
+  padding: 30px 10px;
+}
+.image{
+  display: flex;
+  justify-content: flex-end;
+}
+.close-icon{
+  transition: 0.5s ease-out;
+}
+.close-icon:hover{
+  transform: rotate(360deg) scale(1.02);
+  transition: 0.5s ease-in;
+}
+h1{
+  font-size: 18px;
+  margin-left: 5px;
+}
+label{
+  font-size: 14px;
+  font-weight: bold;
+}
+p{
+  width: 85%;
+  font-size: 13px;
+  margin-left: 25px;
+}
+button{
+  width: 40%;
+  border-radius: 5px;
+}
+button.btn-save{
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: #404558;
+  transition: 0.5s;
+}
+button.btn-save:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  background-color: rgb(53, 141, 53);
+}
+button.btn-cancel{
+  border: 1px solid hsl(240, 2%, 82%);
+  background-color: white;
+  transition: 0.5s;
+}
+button.btn-cancel:hover{
+  transform: scale(1.1);
+  color: white;
+  transition: 0.5s;
+  background-color: rgb(197, 57, 57);
+}
+
+@media screen and (min-width: 360px){
+  main.container{
+    width: 80%;
+    margin: 4vh auto;
+  }
+}
+
+@media screen and (min-width: 440px){
+  main.container{
+    width: 80%;
+    margin: 7vh auto;
+  }
+}
+
+@media screen and (min-width: 520px){
+  main.container{
+    width: 70%;
+    margin: 9vh auto;
+  }
+}
+
+@media screen and (min-width: 640px){
+  main.container{
+    width: 60%;
+    margin: 10vh auto;
+  }
+}
+
+@media screen and (min-width: 820px){
+  main.container{
+    width: 50%;
+    margin: 12vh auto;
+  }
+}
+
+@media screen and (min-width: 1020px){
+  main.container{
+    width: 40%;
+    margin: 12vh auto;
+  }
+}
+
+@media screen and (min-width: 1236px){
+  main.container{
+    width: 30%;
+    margin: 12vh auto;
+  }
+}
+
+@media screen and (orientation: landscape){
+  main.container{
+    max-height: 200vh;
+  }
+}
